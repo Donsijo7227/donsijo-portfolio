@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link href="css/style.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <header><!--header section(first section in the page)-->
+            <img src="images/logo.png" alt="logo"  > 
+            <!--navigation menu-->
+            <div class="navigation">
+                <nav class="active">
+                    <a href="#aboutMe">About me</a> 
+                    <a href="#mySkills">Skills</a> 
+                    <a href="#contact">Contact</a>
+                </nav><!--End of navigation section-->
+            </div>
+        </header><!--End of header section-->
+    <!--main content div-->
+    <div class="container">
+        <!--My intro section(second section in the page)-->
+        <div class="title" id="aboutMe">
+            <h1>Hi,<br>I'm Don<br>Front-End Developer</h1>
+        </div><!--End of intro sectino-->
+
+        <!--third section of the page(about me)-->
+        <div class="para">
+            <p>Hey there, I'm Don Sijo, a student immersing myself in the fascinating world of interactive media design with a keen eye on becoming a front-end developer. I'm thrilled to extend an invitation for you to join me on this exciting journey as I learn and create in the expansive and ever-evolving realm of web development. Together, let's explore the intricacies, share insights, and witness the growth and creativity unfold in this dynamic field!</p>
+        </div><!--end of third section(about me)-->
+        
+        <!--main div for skill section-->
+        <div class="skills" id="mySkills">
+            <!--skill heading h2-->
+            <h2>Skills</h2>
+            <!--first row of skill section(fourth section of the page)-->
+            <div class="row" >
+                <div class="skillBox">
+                    <h3>HTML</h3>
+                    <img class="logo" src="images/logo/html-1.svg" alt="html-logo" />
+                </div>
+                <div class="skillBox">
+                    <h3>CSS</h3>
+                    <img class="logo" src="images/logo/css-3.svg" alt="css-logo" />
+                </div>
+                <div class="skillBox">
+                    <h3>JAVASCRIPT</h3>
+                    <img class="logo" src="images/logo/javascript-1.svg" alt="javascript-logo" />
+                </div>
+            </div><!--end of fourth section-->
+
+            <!--second row of skill section(fifth section of the page)-->            
+            <div class="row">
+                <div class="skillBox">
+                    <h3>PYTHON</h3>
+                    <img class="logo" id="candpythonlogo" src="images/logo/python-5.svg" alt="python-logo" />
+                </div>
+                <div class="skillBox">
+                    <h3>MySQL</h3>
+                    <img class="logo" src="images/logo/mysql-logo.svg" alt="mysql-logo" />
+                </div>
+                <div class="skillBox">
+                    <h3>REACT</h3>
+                    <img class="logo" src="images/logo/react-2.svg" alt="react-logo" />
+                </div>
+            </div><!--end of fifth section-->
+
+            <!--third row of skill section(sixth section of the page)-->
+            <div class="row">
+                <div class="skillBox">
+                    <h3>PHP</h3>
+                    <img class="logo" src="images/logo/php-1.svg" alt="php-logo" />
+                </div>
+                <div class="skillBox">
+                    <h3>C</h3>
+                    <img class="logo" src="images/logo/c-1.svg" alt="c-logo" />
+                </div>
+                <div class="skillBox">
+                    <h3>C++</h3>
+                    <img class="logo" id="candpythonlogo" src="images/logo/c.svg" alt="c++-logo" />
+                </div>
+            </div><!--end of sixth section-->
+        </div><!--closing div of main skill div-->
+
+        <!--contact section(seventh section of the page)-->
+        <div class="contact-me" id="contact">
+            <form onsubmit="sendEmail();reset()">
+                <h2>Get in touch</h2>
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="email" id="email" placeholder="Email id" required>
+                <input type="text" id="phone" placeholder="Phone number" required>
+                <textarea id="message" rows="4" placeholder="Type your message here"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p><small>Made with ❤ by Don Sijo </small></p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" ></script>
+    
+</body>
+</html>

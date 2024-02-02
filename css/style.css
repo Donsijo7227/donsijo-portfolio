@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bodoni+Moda:opsz@6..96&family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.container {
+	width: 80%;
+	margin: 60px auto;
+	
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background: rgb(0,0,0);
+    background: linear-gradient(
+        140deg,
+        hsl(0deg 0% 0%) 0%,
+        hsl(343deg 0% 7%) 8%,
+        hsl(343deg 0% 11%) 15%,
+        hsl(344deg 0% 15%) 21%,
+        hsl(344deg 0% 20%) 28%,
+        hsl(344deg 0% 24%) 34%,
+        hsl(344deg 0% 29%) 40%,
+        hsl(344deg 0% 34%) 45%,
+        hsl(344deg 0% 39%) 51%,
+        hsl(344deg 0% 44%) 56%,
+        hsl(344deg 0% 49%) 61%,
+        hsl(344deg 0% 55%) 66%,
+        hsl(344deg 0% 60%) 71%,
+        hsl(344deg 0% 65%) 75%,
+        hsl(344deg 0% 71%) 79%,
+        hsl(344deg 0% 77%) 84%,
+        hsl(344deg 0% 82%) 88%,
+        hsl(344deg 0% 88%) 92%,
+        hsl(344deg 0% 94%) 96%,
+        hsl(0deg 0% 100%) 100%)
+    }
+
+header img{
+    height: 30px;
+    padding-left: 50px;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    padding: 20px ;
+    background-color: black;
+}
+
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-left: 40px;
+}
+
+header nav{
+    padding-right: 90px;
+}
+
+nav a:hover{
+    color: red;
+    transition: 0.3 ease-out;
+}
+
+.title h1{
+    font-family: 'Audiowide', sans-serif;
+    font-size: 70px;
+    color: white;
+}
+
+.para p{
+    margin-top: 60px;
+    font-family: 'Audiowide', sans-serif;
+    color: white;
+    word-spacing: 1.5px;
+    line-height: 50px;
+    text-align:justify;
+    text-transform: uppercase;
+}
+
+.para{
+    padding-left: 450px;
+}
+
+.skills{
+    margin-top: 60px;
+}
+.skills h2{
+    color: white;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 30px;
+}
+
+.skills h3{
+    color: white;
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.skillBox{
+    position: relative;
+    width: 80%; 
+    margin: 10px;
+    height: 300px;
+    padding: 130px;
+    box-sizing: border-box;
+    background-color: #606060;
+    border-radius: 12px;
+    transition: background-color 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillBox:hover {
+    background-color: rgb(31, 30, 30); /* Change background color on hover */
+}
+
+.skillBox:hover h3 {
+    opacity: 0; /* Hide text with zero opacity on hover */
+}
+
+.logo {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#candpythonlogo{
+    padding-left: 100px;
+}
+
+.skillBox:hover .logo {
+    display: inline-block;
+    opacity: 1;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Example text color, adjust as needed */
+  }
+
+form{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h2{
+    color: white;
+    font-family: 'Audiowide', sans-serif;
+}
+
+form input, form textarea{
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    margin: 10px 0;
+    padding: 30px; 
+    background: #575757;
+}
+
+/* form input:hover, form textarea:hover{
+    border:1px solid rgb(0, 0, 0) ;
+    transition: .5s;
+} */
+
+form button{
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    height: 100px; /* Set the height of the footer to 100% of the viewport height */
+    background-color: #333;
+    color: white;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+  
+@media (max-width: 768px){
+    header img{
+        height: 30px;
+        padding-left: 20px;
+    }
+    nav{
+        display: none;
+    }
+    .title h1{
+        font-size: 25px;
+    }
+
+    .para{
+        padding-left:0 ;
+    }
+
+    .para p {
+        margin-top: 60px;
+        font-family: 'Audiowide', sans-serif;
+        font-size: 13px;
+        font-weight:400;
+        color: white;
+        /* word-spacing: -0.5px; */
+        line-height: 30px;
+        text-align: justify;
+        text-transform: uppercase;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+         /* Allow items to wrap to the next line */
+      }
+    
+      .skillBox {
+        padding: 50px;
+        width: calc(10.33% - 20px); /* 50% width for each box */
+        margin: 10px;
+
+      }
+
+      .skills h3{
+        font-size: 10px;
+      }
+    /* .row {
+        display: block;
+        margin-top: 50px;
+    } */
+
+    .skillBox{
+        height: 10px;
+    }
+
+    /* .skillBox img{
+        padding-left: 0;
+    }
+
+    .mySkills .row:nth-child(3) .logo:nth-child(3) {
+        padding-left: 0px;
+        margin-left: 25px;
+      }
+
+      .mySkills .row:nth-child(2) .logo:nth-child(1) {
+        padding-left: 0px;
+        margin-left: 25px;
+      }
+       */
+
+    #candpythonlogo{
+        padding-left: 0px;
+        margin-left: 25px;
+    }
+
+
+
+}
+
