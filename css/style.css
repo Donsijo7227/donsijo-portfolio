@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bodoni+Moda:opsz@6..96&family=Montserrat:wght@300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
 
 .container {
-	width: 80%;
-	margin: 60px auto;
-	
+    width: 80%;
+    margin: 60px auto;
+
 }
 
-html{
+html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background: rgb(0,0,0);
+    background: rgb(0, 0, 0);
     /* background: linear-gradient(
         140deg,
         hsl(0deg 0% 0%) 0%,
@@ -42,25 +44,36 @@ html{
         hsl(344deg 0% 88%) 92%,
         hsl(344deg 0% 94%) 96%,
         hsl(0deg 0% 100%) 100%) */
-    }
+}
 
-header img{
+header img {
     height: 30px;
     padding-left: 50px;
 }
 
 header {
     display: flex;
-    justify-content:space-between;
-    padding: 20px ;
+    justify-content: space-between;
+    padding: 20px;
     background-color: black;
+    z-index: 999;
+    box-shadow: 0 5px 30px rgb(18, 150, 139);
 }
 
-.title span{
+.floater {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0, );
+    box-shadow: 0 5px 15px rgba(224, 222, 222, 0.06);
+}
+
+.title span {
     color: #12968b;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -68,59 +81,60 @@ header a{
     padding-left: 40px;
 }
 
-header nav{
+header nav {
     padding-right: 90px;
 }
 
-nav a:hover{
+nav a:hover {
     color: #12968b;
     transition: 0.3 ease-out;
 }
 
-.title h1{
+.title h1 {
     font-family: 'Audiowide', sans-serif;
     font-size: 70px;
     color: white;
 }
 
-.para p{
+.para p {
     margin-top: 60px;
     font-family: 'Audiowide', sans-serif;
     color: white;
     word-spacing: 1.5px;
     line-height: 50px;
-    text-align:justify;
+    text-align: justify;
     text-transform: uppercase;
 }
 
-.para{
+.para {
     padding-left: 450px;
 }
 
-.skills{
+.skills {
     margin-top: 60px;
 }
-.skills h2{
+
+.skills h2 {
     color: white;
     font-family: 'Audiowide', sans-serif;
     font-size: 30px;
 }
 
-.skills h3{
+.skills h3 {
     color: white;
     font-family: 'Audiowide', sans-serif;
     text-align: center;
 }
 
-.row{
+.row {
     display: flex;
     margin-top: 50px;
 
 }
 
-.skillBox{
+.skillBox {
     position: relative;
-    width: 80%; 
+    width: 80%;
     margin: 10px;
     height: 300px;
     padding: 130px;
@@ -136,11 +150,13 @@ nav a:hover{
 }
 
 .skillBox:hover {
-    background-color: rgb(31, 30, 30); /* Change background color on hover */
+    background-color: rgb(31, 30, 30);
+    /* Change background color on hover */
 }
 
 .skillBox:hover h3 {
-    opacity: 0; /* Hide text with zero opacity on hover */
+    opacity: 0;
+    /* Hide text with zero opacity on hover */
 }
 
 .logo {
@@ -155,7 +171,7 @@ nav a:hover{
     transition: opacity 0.2s ease-in-out;
 }
 
-#candpythonlogo{
+#candpythonlogo {
     padding-left: 100px;
 }
 
@@ -169,10 +185,11 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white; /* Example text color, adjust as needed */
-  }
+    color: white;
+    /* Example text color, adjust as needed */
+}
 
-form{
+form {
     margin-top: 70px;
     display: flex;
     flex-direction: column;
@@ -181,17 +198,18 @@ form{
     border-radius: 10px;
 }
 
-form h2{
+form h2 {
     color: white;
     font-family: 'Audiowide', sans-serif;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     color: white;
     border-radius: 10px;
     border: 0;
     margin: 10px 0;
-    padding: 30px; 
+    padding: 30px;
     background: #575757;
 }
 
@@ -200,7 +218,7 @@ form input, form textarea{
     transition: .5s;
 } */
 
-form button{
+form button {
     padding: 10px;
     background: black;
     color: white;
@@ -217,39 +235,44 @@ footer {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    justify-content: center; /* Vertically center content */
-    align-items: center; /* Horizontally center content */
-    height: 100px; /* Set the height of the footer to 100% of the viewport height */
+    justify-content: center;
+    /* Vertically center content */
+    align-items: center;
+    /* Horizontally center content */
+    height: 100px;
+    /* Set the height of the footer to 100% of the viewport height */
     background-color: #333;
     color: white;
-  }
-  
-  footer p {
-    margin: 0;
-  }
+}
 
-  
-@media (max-width: 768px){
-    header img{
+footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    header img {
         height: 30px;
         padding-left: 20px;
     }
-    nav{
+
+    nav {
         display: none;
     }
-    .title h1{
+
+    .title h1 {
         font-size: 25px;
     }
 
-    .para{
-        padding-left:0 ;
+    .para {
+        padding-left: 0;
     }
 
     .para p {
         margin-top: 60px;
         font-family: 'Audiowide', sans-serif;
         font-size: 13px;
-        font-weight:400;
+        font-weight: 400;
         color: white;
         /* word-spacing: -0.5px; */
         line-height: 30px;
@@ -260,25 +283,27 @@ footer {
     .row {
         display: flex;
         justify-content: space-around;
-         /* Allow items to wrap to the next line */
-      }
-    
-      .skillBox {
+        /* Allow items to wrap to the next line */
+    }
+
+    .skillBox {
         padding: 50px;
-        width: calc(10.33% - 20px); /* 50% width for each box */
+        width: calc(10.33% - 20px);
+        /* 50% width for each box */
         margin: 10px;
 
-      }
+    }
 
-      .skills h3{
+    .skills h3 {
         font-size: 10px;
-      }
+    }
+
     /* .row {
         display: block;
         margin-top: 50px;
     } */
 
-    .skillBox{
+    .skillBox {
         height: 10px;
     }
 
@@ -297,7 +322,7 @@ footer {
       }
        */
 
-    #candpythonlogo{
+    #candpythonlogo {
         padding-left: 0px;
         margin-left: 25px;
     }
